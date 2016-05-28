@@ -1,0 +1,50 @@
+ .jsBox {
+	background-color: #cbdad5;
+	height: 150px;
+	border: 5px solid white;
+	border-left-width: 15px;
+	border-right-width: 15px; 
+}
+
+.jsBox p {
+    font-size: 1.7em;
+    padding-top: 0px;
+    position: absolute;
+    top: 15px;
+}
+
+.purple {
+	color: #bb22ee;
+}
+
+.black {
+	color: #000;
+}
+
+.orange {
+	color: #bf4705;
+}
+
+.hide {
+	display: none;
+}
+
+.blueBackground {
+	background-color: #207267;
+}
+
+.orangeBackground {
+	background-color: #bf4705;
+}
+
+.rightJustify {
+	text-align: right;
+}
+
+.showKitty {
+	display: block;
+}
+
+li {
+	cursor:pointer;>
+}

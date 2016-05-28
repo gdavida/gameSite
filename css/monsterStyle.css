@@ -1,0 +1,182 @@
+
+nav {
+    background-color: green;
+}
+.dropzone {
+  height: 60%;
+  background-color: #ccc;
+  border: dashed 4px transparent;
+  border-radius: 4px;
+  margin: 10px auto 30px;
+  padding: 10px;
+  max-height: 475px;
+  background: url("../images/toiletwpoo1.png");
+  background-size: contain;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+.drop-active {
+}
+
+.drop-target {
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  min-width: 40px;
+  padding: 2em 0.5em;
+  color: #fff;
+}
+
+.drag-drop.can-drop {
+}
+
+body {
+  padding: 1em;
+}
+
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.siteName {
+  font-size: 38px;
+  color: #fff;
+  padding-right: 20px;
+  padding-left: 20px;
+  text-transform: uppercase;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/**/
+
+
+.carousel-inner .active.left { 
+  left: -25%; 
+}
+.carousel-inner .next { 
+  left:  25%; 
+}
+.carousel-control { 
+  width:  4%; 
+}
+.carousel-control.left,.carousel-control.right {
+  margin-left:15px; 
+  background-image:none;
+}
+
+
+/**/
+/*
+a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+background-color:#4CAF50;
+}
+*/
+.box {
+  background-color: transparent;
+  max-width: 80px;
+  height: auto;
+  float: left;
+  margin: 5px;
+  z-index: 100;
+}
+
+
+#toiletCont {
+  height: 1250px;/*
+  background: url("../images/poo/poop1.png");
+  background-size: 16%;
+  background-position: 50% 56%;*/
+  background-repeat: no-repeat;
+
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;`
+}
+
+
+.pooImage {
+    ;
+
+}
+
+.pooImage img{
+  z-index: -1;
+  max-width: 160px;
+  height: auto;
+}`
+
+./*hatsArea {
+  position:fixed;
+}*/
+
+.hatBox img {
+  max-width: 20%;
+}
+
+@media screen and (max-width: 440px) {
+  .dropzone {
+    background-position: 50% 0%;
+  }
+  #container {
+    height: 1200px;
+    background-size: 31%;
+    background-position: 50% 89%;
+  }
+}
+
+  .englishSm, .frenchSm, .spanishSm {
+    font-size: 10px;
+  }
+
+@media screen and (max-width: 550px) {
+  .englishBig, .frenchBig, .spanishBig {
+    visibility: hidden;
+  }
+  .englishSm, .frenchSm, .spanishSm {
+    display: visible;
+  }
+  .siteName {
+    font-size: 24px;
+  }
+
+}
+@media screen and (min-width: 550px) {
+  .englishBig, .frenchBig, .spanishBig {
+    visibility: visible;
+  }
+  .englishSm, .frenchSm, .spanishSm {
+    visibility: hidden;
+    display: none;
+  }
+
+}
+
+
+/* NEED MEDIA QUERIES FOR ANYTHING LESS THAN 475px*/

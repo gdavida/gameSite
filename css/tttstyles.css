@@ -1,0 +1,133 @@
+* {
+		font-family: 'Biryani', sans-serif;
+}
+
+@media screen and (min-width: 375px) {
+	a.navbar-brand {
+		font-size: 18px;
+	}
+}
+
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.player-scores-container {
+	text-align: right;
+}
+
+.colorBlack {
+	color: #000;
+}
+
+.colorWhite {
+	color: #FFF;
+}
+
+
+.x-color {
+	color: #00ffd2;
+}
+
+.o-color {
+	color: #E519FF;
+}
+
+div.navbar-header {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.board {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+.board-tile {
+	padding: 17px 37px;
+	font-size: 45px;
+	border: 10px solid black;
+}
+
+#tile-1-1 {
+	border-top-width: 0px;
+  border-left-width: 0px;
+}
+
+#tile-2-1 {
+  border-left-width: 0px;
+}
+
+#tile-3-1 {
+  border-left-width: 0px;
+  border-bottom-width: 0px;
+}
+
+#tile-1-2 {
+  border-top-width: 0px;
+}
+
+
+#tile-3-2 {
+  border-bottom-width: 0px;
+}
+
+#tile-1-3 {
+	border-top-width: 0px;
+  border-right-width: 0px;
+}
+
+#tile-2-3 {
+  border-right-width: 0px;
+}
+
+#tile-3-3 {
+  border-right-width: 0px;
+  border-bottom-width: 0px;
+}
+
+
+.message-container {
+	margin: 10px 0px;
+	font-style: italic;
+	}
+
+.score {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+
+
+#player-x-wins .outcome-message , #player-o-wins .outcome-message, #tie-game .outcome-message {
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	font-style: normal;
+}
+#player-x-wins .outcome-message span, #player-o-wins .outcome-message span{
+	font-family: 'Monoton', cursive;
+	font-size: 100px;
+	vertical-align: middle;
+	font-style: normal;
+}
+
+#player-x-wins .outcome-message span {
+	color: #00ffd2;
+}
+
+#player-o-wins .outcome-message span {
+	color: #E519FF;
+}
+
+.outcome-message {
+	border: 5px solid black;
+	border-left-width: 0px;
+	border-right-width: 0px;
+}
