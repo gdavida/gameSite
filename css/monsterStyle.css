@@ -1,16 +1,19 @@
 
+* {
+  outline: 1px solid purple;
+}
+
 nav {
     background-color: green;
 }
 .dropzone {
   height: 60%;
-  background-color: #ccc;
   border: dashed 4px transparent;
   border-radius: 4px;
   margin: 10px auto 30px;
   padding: 10px;
-  max-height: 475px;
-  background: url("../images/toiletwpoo1.png");
+  max-height: 400px;
+  background: url("../images/monsterBodies/blue.svg");
   background-size: contain;
   background-position: 50% 0%;
   background-repeat: no-repeat;
@@ -25,7 +28,7 @@ nav {
 
 .drag-drop {
   display: inline-block;
-  min-width: 40px;
+  min-width: 120px;
   padding: 2em 0.5em;
   color: #fff;
 }
@@ -106,10 +109,7 @@ background-color:#4CAF50;
 
 
 #toiletCont {
-  height: 1250px;/*
-  background: url("../images/poo/poop1.png");
-  background-size: 16%;
-  background-position: 50% 56%;*/
+  height: 1250px;
   background-repeat: no-repeat;
 
 }
@@ -121,20 +121,17 @@ background-color:#4CAF50;
 }
 
 
-.pooImage {
+.monsterImage {
     ;
 
 }
 
-.pooImage img{
+.monsterImage img{
   z-index: -1;
   max-width: 160px;
   height: auto;
 }`
 
-./*hatsArea {
-  position:fixed;
-}*/
 
 .hatBox img {
   max-width: 20%;
@@ -173,7 +170,7 @@ background-color:#4CAF50;
   }
   .englishSm, .frenchSm, .spanishSm {
     visibility: hidden;
-    display: none;
+    display: none;`
   }
 
 }
