@@ -92,8 +92,8 @@ nav {
   background-repeat: no-repeat;
 }
 
-#bodyWhite {
-  background: url("../images/monsterBodies/white.svg");
+#bodyRainbow {
+  background: url("../images/monsterBodies/rainbow.svg");
   background-size: contain;
   background-position: 50% 0%;
   background-repeat: no-repeat;
