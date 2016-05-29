@@ -48,11 +48,6 @@ interact('.draggable')
 
 
 
-
-
-
-
-
 /* The dragging code for '.draggable' from the demo above
  * applies to this demo as well so it doesn't have to be repeated. */
 
@@ -94,3 +89,45 @@ interact('.dropzone').dropzone({
   }
 });
 
+
+
+function showBodies() {
+  var imagesList = document.getElementsByClassName('parts');
+  for (var i = 0; i < imagesList.length; i++) {
+    imagesList[i].classList.remove("show");
+    imagesList[i].classList.add("hide");
+  }
+  var chooseBodies = document.getElementsByClassName('bodies');
+  for (var i = 0; i < chooseBodies.length; i++) {
+    chooseBodies[i].classList.remove("hide");
+    chooseBodies[i].classList.add("show");
+  }
+}
+
+function chooseBody(el) {
+  var useThisId = el.getAttribute('id');
+  var monsterBox = document.getElementsByClassName('dropzone');
+  monsterBox = monsterBox[0];
+  monsterBox.id = '';
+  monsterBox.id = useThisId;
+}
+
+function showParts() {
+  var imagesList = document.getElementsByClassName('bodies');
+  for (var i = 0; i < imagesList.length; i++) {
+    imagesList[i].classList.remove("show");
+    imagesList[i].classList.add("hide");
+  }
+  var imagesList = document.getElementsByClassName('parts');
+  for (var i = 0; i < imagesList.length; i++) {
+    imagesList[i].classList.remove("hide");
+    imagesList[i].classList.add("show");
+  }
+}
+
+
+function saveMonster() {
+  var canvas = document.getElementsByClassName('dropzone');
+  var dataURL = canvas[0].toDataURL(image/png);
+  window.open(dataUrl, "toDataURL() image", "width=600, height=600");
+}

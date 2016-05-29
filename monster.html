@@ -23,107 +23,167 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
+ <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
                 <a class="navbar-brand" href="index.html">Lina's First Game Site</a>
-    </div>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
-</nav>
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12 col-md-4">
-        <h5>Make-a-Monster</h5>
-      </div>
-      <div class="col-xs-12 col-md-2">
-        <h5>Body</h5>
-      </div>
-      <div class="col-xs-12 col-md-2">
-        <h5>Mouth</h5>
-      </div>
-      <div class="col-xs-12 col-md-2">
-        <h5>Eyes</h5>
-      </div>
-      <div class="col-xs-12 col-md-2">
-        <h5>Accessories</h5>
-      </div>
-    </div>
-  </div>
-     <div class="container">
-    <div id="toiletCont" class="group row">
-      <div class="col-xs-6 blueBody  monsterImage dropzone" id="outer-dropzone">
-<!--         <img src="images/monsterBodies/blue.svg">
- -->      
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="tic-tac-toe.html">Tic-Tac-Toe</a>
+                    </li>
+                    <li>
+                        <a href="dot-game.html">The Dot Game</a>
+                    </li>
+                    <li>
+                        <a href="monster.html">Make-A-Monster</a>
+                    </li>
+                    <li>
+<!--                         <a href="day3.html">Day 3</a>
+ -->                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+
+  <div class="container monsterContainer">
+      <div class="row">
+        <div class="col-xs-12 col-md-6">
+          <h5 >Make-a-Monster</h5>
+          <p class="saveMonsterButton" onclick="saveMonster();">Save Monster</p>
+        </div>
+        <div class="col-xs-12 col-md-2">
+          <h5 id="bodyTab" onClick="showBodies();">Choose Body</h5>
+        </div>
+        <div class="col-xs-12 col-md-2">
+          <h5 id="mouthTab" onClick="showParts();">Monster Parts</h5>
+        </div>
       </div>
 
+    <div id="monsterDropBox" class="group row">
+      <div class="col-xs-6 monsterImage dropzone" id="">
+      </div>
         <div class="bodies col-xs-6">      
           <div class="chooseBody">
-            <img class="box bodyRed bodies" src="images/monsterBodies/red.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyRed" src="images/monsterBodies/red.svg">
           </div>
           <div class="chooseBody">
-            <img class="box bodyOrange bodies" src="images/monsterBodies/orange.svg">
+            <img class="box show bodies" id="bodyOrange" onClick="chooseBody(this);" src="images/monsterBodies/orange.svg">
           </div>
           <div class="chooseBody">
-            <img class="box bodyYellow bodies" src="images/monsterBodies/yellow.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyYellow" src="images/monsterBodies/yellow.svg">
           </div>  
           <div class="chooseBody">
-            <img class="box bodyGreen bodies" src="images/monsterBodies/green.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyGreen" src="images/monsterBodies/green.svg">
           </div>
           <div class="chooseBody">
-            <img class="box bodyBlue bodies" src="images/monsterBodies/blue.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyBlue" src="images/monsterBodies/blue.svg">
           </div>
           <div class="chooseBody">
-            <img class="box bodyIndigo bodies" src="images/monsterBodies/indigo.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyBrown" src="images/monsterBodies/brown.svg">
           </div>
           <div class="chooseBody">
-            <img class="box bodyTan bodies" src="images/monsterBodies/tan.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyTeal" src="images/monsterBodies/teal.svg">
+          </div>
+          <div class="chooseBody">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyIndigo" src="images/monsterBodies/indigo.svg">
+          </div>
+          <div class="chooseBody">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyTan" src="images/monsterBodies/tan.svg">
+          </div>
+          <div class="chooseBody">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyPurple" src="images/monsterBodies/purple.svg">
+          </div>
+          <div class="chooseBody">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyWhite" src="images/monsterBodies/white.svg">
+          </div>
+          <div class="chooseBody">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyBlack" src="images/monsterBodies/black.svg">
+          </div>
+          <div class="chooseBody">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyCoral" src="images/monsterBodies/coral.svg">
+          </div>
+          <div class="chooseBody">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyPeach" src="images/monsterBodies/peach.svg">
+          </div>
+          <div class="chooseBody">
+            <img class="box hide bodies" onClick="chooseBody(this);" id="bodyPink" src="images/monsterBodies/pink.svg">
           </div>
         </div>
 
-      <div class="bg-red draggable drag-drop spot1">
-          <img class="box mouth1 mouths" src="images/monsterMouths/mouth1.svg">
-          <img class="box eyes1 eyes" src="images/monsterEyes/eyes1.svg">
-          <img class="box headAccessories1 headAccessories" src="images/monsterHeadAccessories/horns1.svg">
+        <div class="draggable drag-drop">
+          <img class="box mouth1 mouths parts hide" src="images/monsterMouths/mouth1.svg">
+        </div>
+        <div class="draggable drag-drop">
+          <img class="box mouth2 hide parts mouths" src="images/monsterMouths/mouth2.svg">
+        </div>
+        <div class="draggable drag-drop">  
+          <img class="box mouth3 hide parts mouths" src="images/monsterMouths/mouth3.svg">
+        </div>
+        <div class="draggable drag-drop">
+          <img class="box mouth4 hide parts mouths" src="images/monsterMouths/mouth4.svg">
+        </div>
+        <div class="draggable drag-drop">
+          <img class="box mouth6 hide parts mouths" src="images/monsterMouths/mouth5.svg">
+        </div>
+        <div class="draggable drag-drop">
+          <img class="box mouth6 hide parts mouths" src="images/monsterMouths/mouth6.svg">
+        </div>
+
+        <div class="draggable drag-drop">
+          <img class="box eyes1 hide parts eyes" src="images/monsterEyes/eyes1.svg">
+        </div>
+        <div class="draggable drag-drop">
+          <img class="box eyes2 hide parts eyes" src="images/monsterEyes/eyes2.svg">
+        </div>
+        <div class="draggable drag-drop">
+          <img class="box eyes3 hide parts eyes" src="images/monsterEyes/eyes3.svg">
+        </div>
+        <div class="draggable drag-drop">
+          <img class="box eyes4 hide parts eyes" src="images/monsterEyes/eyes4.svg">
+        </div>
+        <div class="draggable drag-drop">
+          <img class="box eyes5 hide parts eyes" src="images/monsterEyes/eyes5.svg">
+        </div>
+        <div class="draggable drag-drop">
+          <img class="box eyes6 hide parts eyes" src="images/monsterEyes/eyes6.svg">
+        </div>
+
+
+
+      <div class="draggable drag-drop">
+          <img class="box headAccessories1 hide parts headAccessories" src="images/monsterHeadAccessories/horns1.svg">
       </div>
-        <div class="bg-blue draggable drag-drop spot2">
-          <img class="box mouth2 mouths" src="images/monsterMouths/mouth2.svg">
-          <img class="box eyes2 eyes" src="images/monsterEyes/eyes2.svg">
-          <img class="box headAccessories2 headAccessories" src="images/monsterHeadAccessories/horns2.svg">
+      <div class="draggable drag-drop">
+          <img class="box headAccessories2 hide parts headAccessories" src="images/monsterHeadAccessories/horns2.svg">
         </div>
-        <div class="bg-blue draggable drag-drop spot3">  
-          <img class="box mouth3 mouths" src="images/monsterMouths/mouth3.svg">
-          <img class="box eyes3 eyes" src="images/monsterEyes/eyes3.svg">
-          <img class="box headAccessories2 headAccessories" src="images/monsterHeadAccessories/tiara.png">
-
+      <div class="draggable drag-drop">
+          <img class="box headAccessories3 hide parts headAccessories" src="images/monsterHeadAccessories/tiara.png">
         </div>
-        <div class="bg-purple draggable drag-drop spot4">
-          <img class="box mouth4 mouths" src="images/monsterMouths/mouth4.svg">
-          <img class="box eyes4 eyes" src="images/monsterEyes/eyes4.svg">
-          <img class="box headAccessories2 headAccessories" src="images/monsterHeadAccessories/jesterHat.png">
-
+      <div class="draggable drag-drop">
+          <img class="box headAccessories4 parts hide headAccessories" src="images/monsterHeadAccessories/jesterHat.png">
         </div>
-        <div class="bg-purple draggable drag-drop spot5">
-          <img class="box mouth5 mouths" src="images/monsterMouths/mouth5.svg">
-          <img class="box eyes5 eyes" src="images/monsterEyes/eyes5.svg">
-          <img class="box headAccessories2 headAccessories" src="images/monsterHeadAccessories/pinkFancyHat.png">
-
+      <div class="draggable drag-drop">
+          <img class="box headAccessories5 parts hide headAccessories" src="images/monsterHeadAccessories/pinkFancyHat.png">
         </div>
 
-      <div class="draggable drag-drop spot6">
-          <img class="box mouth6 mouths" src="images/monsterMouths/mouth6.svg">
-          <img class="box eyes6 eyes" src="images/monsterEyes/eyes6.svg">
-          <img class="box headAccessories2 headAccessories" src="images/monsterHeadAccessories/pirateHat.png">
+      <div class="draggable drag-drop">
+          <img class="box headAccessories6 parts hide headAccessories" src="images/monsterHeadAccessories/pirateHat.png">
       </div>
-
-
     </div>
   </div>
 

@@ -1,8 +1,4 @@
 
-* {
-  outline: 1px solid purple;
-}
-
 nav {
     background-color: green;
 }
@@ -15,44 +11,117 @@ nav {
   max-height: 400px;
 }
 
-.redBody {
+.monsterContainer {
+  position: relative;
+  top:50px;
+}
+
+
+.hide {
+ visibility: hidden;
+}
+
+.show {
+  visibility: visible;
+}
+
+.monsterImage {
+  height: 400px;
+}
+
+#bodyRed {
   background: url("../images/monsterBodies/red.svg");
   background-size: contain;
   background-position: 50% 0%;
   background-repeat: no-repeat;
 }
-.orangeBody {
+#bodyOrange {
   background: url("../images/monsterBodies/orange.svg");
   background-size: contain;
   background-position: 50% 0%;
   background-repeat: no-repeat;
 }
-.yellowBody {
+#bodyYellow {
   background: url("../images/monsterBodies/yellow.svg");
   background-size: contain;
   background-position: 50% 0%;
   background-repeat: no-repeat;
 }
-.greenBody {
+#bodyGreen {
   background: url("../images/monsterBodies/green.svg");
   background-size: contain;
   background-position: 50% 0%;
   background-repeat: no-repeat;
 }
-.blueBody {
+#bodyBlue {
   background: url("../images/monsterBodies/blue.svg");
   background-size: contain;
   background-position: 50% 0%;
   background-repeat: no-repeat;
 }
-.indigoBody {
+#bodyTeal {
+  background: url("../images/monsterBodies/teal.svg");
+  background-size: contain;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+#bodyIndigo {
   background: url("../images/monsterBodies/indigo.svg");
   background-size: contain;
   background-position: 50% 0%;
   background-repeat: no-repeat;
 }
-.tanBody {
+#bodyTan {
   background: url("../images/monsterBodies/tan.svg");
+  background-size: contain;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+#bodyPink {
+  background: url("../images/monsterBodies/pink.svg");
+  background-size: contain;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+#bodyPurple {
+  background: url("../images/monsterBodies/purple.svg");
+  background-size: contain;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+#bodyWhite {
+  background: url("../images/monsterBodies/white.svg");
+  background-size: contain;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+#bodyBlack {
+  background: url("../images/monsterBodies/black.svg");
+  background-size: contain;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+#bodyPeach {
+  background: url("../images/monsterBodies/peach.svg");
+  background-size: contain;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+#bodyCoral{
+  background: url("../images/monsterBodies/coral.svg");
+  background-size: contain;
+  background-position: 50% 0%;
+  background-repeat: no-repeat;
+}
+
+#bodyBrown {
+  background: url("../images/monsterBodies/brown.svg");
   background-size: contain;
   background-position: 50% 0%;
   background-repeat: no-repeat;
