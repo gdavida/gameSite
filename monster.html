@@ -42,9 +42,9 @@
                     <li>
                         <a href="tic-tac-toe.html">Tic-Tac-Toe</a>
                     </li>
-                    <li>
+<!--                     <li>
                         <a href="dot-game.html">The Dot Game</a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="monster.html">Make-A-Monster</a>
                     </li>
@@ -63,14 +63,15 @@
   <div class="container monsterContainer">
       <div class="row">
         <div class="col-xs-12 col-md-6">
-          <h5 >Make-a-Monster</h5>
+          <h3>Make-a-Monster</h3>
           <p class="saveMonsterButton" onclick="saveMonster();">Save Monster</p>
+          <p class="resetMonster"><a href="monster.html">Reset</a></p>
         </div>
         <div class="col-xs-12 col-md-2">
-          <h5 id="bodyTab" onClick="showBodies();">Choose Body</h5>
+          <h4 id="bodyTab" onClick="showBodies();">Choose Body</h4>
         </div>
         <div class="col-xs-12 col-md-2">
-          <h5 id="mouthTab" onClick="showParts();">Monster Parts</h5>
+          <h4 id="mouthTab" onClick="showParts();">Monster Parts</h4>
         </div>
       </div>
 
@@ -125,6 +126,13 @@
           </div>
         </div>
 
+
+      <div class="draggable drag-drop">
+          <img class="box headAccessories1 hide parts headAccessories" src="images/monsterHeadAccessories/horns1.svg">
+      </div>
+      <div class="draggable drag-drop">
+          <img class="box headAccessories2 hide parts headAccessories" src="images/monsterHeadAccessories/horns2.svg">
+        </div>
         <div class="draggable drag-drop">
           <img class="box mouth1 mouths parts hide" src="images/monsterMouths/mouth1.svg">
         </div>
@@ -164,26 +172,10 @@
         </div>
 
 
-
-      <div class="draggable drag-drop">
-          <img class="box headAccessories1 hide parts headAccessories" src="images/monsterHeadAccessories/horns1.svg">
-      </div>
-      <div class="draggable drag-drop">
-          <img class="box headAccessories2 hide parts headAccessories" src="images/monsterHeadAccessories/horns2.svg">
-        </div>
       <div class="draggable drag-drop">
           <img class="box headAccessories3 hide parts headAccessories" src="images/monsterHeadAccessories/tiara.png">
         </div>
-      <div class="draggable drag-drop">
-          <img class="box headAccessories4 parts hide headAccessories" src="images/monsterHeadAccessories/jesterHat.png">
-        </div>
-      <div class="draggable drag-drop">
-          <img class="box headAccessories5 parts hide headAccessories" src="images/monsterHeadAccessories/pinkFancyHat.png">
-        </div>
 
-      <div class="draggable drag-drop">
-          <img class="box headAccessories6 parts hide headAccessories" src="images/monsterHeadAccessories/pirateHat.png">
-      </div>
     </div>
   </div>
 
