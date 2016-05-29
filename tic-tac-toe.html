@@ -15,14 +15,26 @@
   <title>Lina's First Game Site</title>
   <link rel="stylesheet" type="text/css" href="./css/tttstyles.css">
   <!-- move this and add needed code into the apge load section of script.js -->
-  <link href='https://fonts.googleapis.com/css?family=Biryani:400,800,200' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Monoton' rel='stylesheet' type='text/css'>
+     
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/monsterStyle.css">    
+    <link 
+      type="image/png" 
+      href="images/favicon.png">
+<script src="https://code.jquery.com/jquery-2.2.3.js" integrity="sha256-laXWtGydpwqJ8JA+X9x2miwmaiKhn8tVmOVEigRNtP4=" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script> 
 
   <script src="./js/tttscript.js"></script>
 </head>
-<body>
-
-    <!-- Navigation -->
+<body style="position:relative; top:40px;">
+<!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -57,7 +69,7 @@
         <!-- /.container -->
     </nav>
 
-    
+   
 <!-- - - - - - - - - - - - - - - -->
 <!-- - - - - - - - - - - - - - - -->
     <!-- Page Content -->
@@ -65,7 +77,10 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-         <h1>Tic Tac Toe</h1>
+        <h1>Tic Tac Toe</h1>
+        <p>
+            <a href="tic-tac-toe.html" class="reset-button" id="reset-button">Reset</a>
+        </p>
       </div>
   <!--     <div class="player-scores-container row col-xs-12">
           scores a dummy scores for output display purposes, rather than the
@@ -130,9 +145,6 @@
       </ol>
     </div> -->
         <br><br>
-        <div class="reset-container col-xs-12 col-sm-6 col-sm-offset-3">
-          <a href="http://gdavida.github.io/w07-d01-js-exercises/day3.html" class="reset-button" id="reset-button">Reset</a>
-        </div>
       </div>
   </div>
 
