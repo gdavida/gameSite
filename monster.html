@@ -64,7 +64,7 @@
       <div class="row">
         <div class="col-xs-12 col-md-6">
           <h3>Make-a-Monster</h3>
-          <p class="saveMonsterButton" onclick="saveMonster();">Save Monster</p>
+          <button onClick="saveIt();">Save Image</button>
           <p class="resetMonster"><a href="monster.html">Reset</a></p>
         </div>
         <div class="col-xs-12 col-md-2">
@@ -76,99 +76,100 @@
       </div>
 
     <div id="monsterDropBox" class="group row">
-      <div class="col-xs-6 monsterImage dropzone" id="">
+      <div class="col-xs-6 monsterImage" id="dropzone">
+        <canvas id="myCanvas" width="50%" height="50%"></canvas>
       </div>
         <div class="bodies col-xs-6">      
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyRed" src="images/monsterBodies/red.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyRed" src="images/monsterBodies/red.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" id="bodyOrange" onClick="chooseBody(this);" src="images/monsterBodies/orange.svg">
+            <img class="box show bodies" id="bodyOrange" onClick="chooseBody(this);" src="images/monsterBodies/orange.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyYellow" src="images/monsterBodies/yellow.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyYellow" src="images/monsterBodies/yellow.png">
           </div>  
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyGreen" src="images/monsterBodies/green.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyGreen" src="images/monsterBodies/green.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyBlue" src="images/monsterBodies/blue.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyBlue" src="images/monsterBodies/blue.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyBrown" src="images/monsterBodies/brown.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyBrown" src="images/monsterBodies/brown.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyTeal" src="images/monsterBodies/teal.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyTeal" src="images/monsterBodies/teal.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyIndigo" src="images/monsterBodies/indigo.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyIndigo" src="images/monsterBodies/indigo.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyTan" src="images/monsterBodies/tan.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyTan" src="images/monsterBodies/tan.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyPurple" src="images/monsterBodies/purple.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyPurple" src="images/monsterBodies/purple.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyRainbow" src="images/monsterBodies/rainbow.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyRainbow" src="images/monsterBodies/rainbow.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyBlack" src="images/monsterBodies/black.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyBlack" src="images/monsterBodies/black.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyCoral" src="images/monsterBodies/coral.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyCoral" src="images/monsterBodies/coral.png">
           </div>
           <div class="chooseBody">
-            <img class="box show bodies" onClick="chooseBody(this);" id="bodyPeach" src="images/monsterBodies/peach.svg">
+            <img class="box show bodies" onClick="chooseBody(this);" id="bodyPeach" src="images/monsterBodies/peach.png">
           </div>
           <div class="chooseBody">
-            <img class="box hide bodies" onClick="chooseBody(this);" id="bodyPink" src="images/monsterBodies/pink.svg">
+            <img class="box hide bodies" onClick="chooseBody(this);" id="bodyPink" src="images/monsterBodies/pink.png">
           </div>
         </div>
 
 
       <div class="draggable drag-drop">
-          <img class="box headAccessories1 hide parts headAccessories" src="images/monsterHeadAccessories/horns1.svg">
+          <img class="box headAccessories1 hide parts headAccessories" src="images/monsterHeadAccessories/horns1.png">
       </div>
       <div class="draggable drag-drop">
-          <img class="box headAccessories2 hide parts headAccessories" src="images/monsterHeadAccessories/horns2.svg">
+          <img class="box headAccessories2 hide parts headAccessories" src="images/monsterHeadAccessories/horns2.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box mouth1 mouths parts hide" src="images/monsterMouths/mouth1.svg">
+          <img class="box mouth1 mouths parts hide" src="images/monsterMouths/mouth1.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box mouth2 hide parts mouths" src="images/monsterMouths/mouth2.svg">
+          <img class="box mouth2 hide parts mouths" src="images/monsterMouths/mouth2.png">
         </div>
         <div class="draggable drag-drop">  
-          <img class="box mouth3 hide parts mouths" src="images/monsterMouths/mouth3.svg">
+          <img class="box mouth3 hide parts mouths" src="images/monsterMouths/mouth3.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box mouth4 hide parts mouths" src="images/monsterMouths/mouth4.svg">
+          <img class="box mouth4 hide parts mouths" src="images/monsterMouths/mouth4.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box mouth6 hide parts mouths" src="images/monsterMouths/mouth5.svg">
+          <img class="box mouth6 hide parts mouths" src="images/monsterMouths/mouth5.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box mouth6 hide parts mouths" src="images/monsterMouths/mouth6.svg">
+          <img class="box mouth6 hide parts mouths" src="images/monsterMouths/mouth6.png">
         </div>
 
         <div class="draggable drag-drop">
-          <img class="box eyes1 hide parts eyes" src="images/monsterEyes/eyes1.svg">
+          <img class="box eyes1 hide parts eyes" src="images/monsterEyes/eyes1.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box eyes2 hide parts eyes" src="images/monsterEyes/eyes2.svg">
+          <img class="box eyes2 hide parts eyes" src="images/monsterEyes/eyes2.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box eyes3 hide parts eyes" src="images/monsterEyes/eyes3.svg">
+          <img class="box eyes3 hide parts eyes" src="images/monsterEyes/eyes3.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box eyes4 hide parts eyes" src="images/monsterEyes/eyes4.svg">
+          <img class="box eyes4 hide parts eyes" src="images/monsterEyes/eyes4.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box eyes5 hide parts eyes" src="images/monsterEyes/eyes5.svg">
+          <img class="box eyes5 hide parts eyes" src="images/monsterEyes/eyes5.png">
         </div>
         <div class="draggable drag-drop">
-          <img class="box eyes6 hide parts eyes" src="images/monsterEyes/eyes6.svg">
+          <img class="box eyes6 hide parts eyes" src="images/monsterEyes/eyes6.png">
         </div>
 
 
@@ -184,6 +185,7 @@
 <script src='http://cdnjs.cloudflare.com/ajax/libs/interact.js/1.2.6/interact.min.js'></script>
 
         <script src="js/index.js"></script>
+        <script src="js/html2canvas.js"></script>
 
     
     

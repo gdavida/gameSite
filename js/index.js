@@ -1,5 +1,5 @@
-// target elements with the "draggable" class
-interact('.draggable')
+
+
   .draggable({
     // enable inertial throwing
     inertia: true,
@@ -126,8 +126,6 @@ function showParts() {
 }
 
 
-function saveMonster() {
-  var canvas = document.getElementsByClassName('dropzone');
-  var dataURL = canvas[0].toDataURL('image/png');
-  window.open(dataUrl, "toDataURL() image", "width=600, height=600");
-}
+
+
+
