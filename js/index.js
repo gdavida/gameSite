@@ -125,8 +125,7 @@ function showParts() {
   }
 }
 
-function saveMonster() {
-  var canvas = document.getElementsByClassName('dropzone');
-  var dataURL = canvas[0].toDataURL('image/png');
-  window.open(dataUrl, "toDataURL() image", "width=600, height=600");
-}
+// function saveIt() {
+//   var d = document.getElementById('saveDropzone');
+//   html2canvas(d, { allowTaint: true, onrendered: function(canvas) {document.body.appendChild(canvas);}});
+// }
